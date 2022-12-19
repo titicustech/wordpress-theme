@@ -1,0 +1,199 @@
+/*
+Theme Name: twotest
+Theme URI: https:// beautyinfotech.com
+Author: beautyinfotech
+Author URI: https:// beautyinfotech.com
+Description:  beautyinfotech wordpress theme
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&family=Roboto:ital@0;1&display=swap');
+:root {
+    --h1: 40px;
+    --h2: 32px;
+    --h3: 28px;
+    --h4: 24px;
+    --h5: 20px;
+    --h6: 16px;
+  
+    --sub: 20px;
+  
+    --label: 16px;
+    --ls: 5px;
+  
+    --body: 1.05rem;
+
+    --color-dark-100: rgba(33, 37, 41, 1);
+    --color-dark-75: rgba(33, 37, 41, 0.75);
+    --color-dark-50: rgba(33, 37, 41, 0.5);
+    --color-dark-25: rgba(33, 37, 41, 0.25);
+  
+    --color-white-100: rgba(255, 255, 255, 1);
+    --color-white-75: rgba(255, 255, 255, 0.75);
+    --color-white-50: rgba(255, 255, 255, 0.5);
+    --color-white-25: rgba(255, 255, 255, 0.25);
+  
+    --color-violet-100: rgb(100, 27, 102);
+    --color-violet-75: rgba(129, 25, 157, 0.75);
+    --color-violet-50: rgba(222, 27, 199, 0.5);
+    --color-violet-25: rgba(213, 86, 248, 0.25);
+    
+    --color-green-100: rgb(0, 163, 83);
+    --color-green-50: rgb(15, 208, 115);
+
+    --font-1: 'Outfit', sans-serif;
+    --font-2: 'Roboto', sans-serif;
+    --shadow-1: 3px 4px 12px 1px rgba(0, 0, 0, 0.25)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  img {
+	height: auto;
+	max-width: 100%;
+}
+/* Galleries
+--------------------------------------------- */
+.gallery {
+	margin-bottom: 1.5em;
+	display: grid;
+	grid-gap: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.gallery-columns-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-columns-5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery-columns-6 {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.gallery-columns-7 {
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.gallery-columns-8 {
+	grid-template-columns: repeat(8, 1fr);
+}
+
+.gallery-columns-9 {
+	grid-template-columns: repeat(9, 1fr);
+}
+
+.gallery-caption {
+	display: block;
+}
+
+  /**
+* ! Style rules for buttons
+**/
+
+.white-btn,
+.dark-btn {
+  color: var(--color-dark-100);
+  background-color: var(--color-white-100);
+  font-family: var(--font-2);
+  font-size: var(--h5);
+  padding: 10px 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.dark-btn {
+  color: var(--color-white-100);
+  background-color: var(--color-dark-100);
+}
+
+/**
+* ! Style rules for responsive images
+**/
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .hide {
+    display: none;
+  }
+  .container {
+    max-width: 1140px;
+    margin: auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  .grid {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 25px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media (max-width: 1200px) {
+    .container {
+      max-width: 970px;
+    }
+  
+    .common-title {
+      font-size: var(--h2);
+    }
+  }
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 740px;
+    }
+    .common-title {
+      font-size: var(--h4);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: 500px;
+    }
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 50px;
+    }
+    .white-btn,
+    .dark-btn {
+      font-size: var(--h6);
+      padding: 8px 25px;
+    }
+  }
+  @media (max-width: 568px) {
+    .container {
+      max-width: 90%;
+    }
+    img {
+        width: 90%;
+        height: auto;
+      }
+    }
